@@ -1,0 +1,51 @@
+/* T'Vedts CSS */
+
+.body {
+    background-color: #27032c; 
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: #27032c;
+}
+
+.container {
+    background-color: #27032c;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center; 
+}
+
+.row1 { 
+    font-family: Impact;
+    margin: 10%;
+    
+}
+
+
+
+img {
+    width:500px;
+    height: 500px;
+    margin-right: 10%;
+}
+
+
+.footer {
+    font-size: small;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
+
+
+/* Keishas CSS */
+
+/* Ethans CSS */
+
+/* Qs CSS */
