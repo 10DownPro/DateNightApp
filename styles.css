@@ -32,10 +32,35 @@
 
 .jumbotron {
     background-image: url(./images/datenight.jpeg);
-    width: auto;
-    height: 80vh;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 0px;
+    background-repeat: no-repeat
 }
 
+#headerTitle {
+  padding-top: 10%;
+  font-size: 200px;
+}
+
+#blurb {
+  font-size: 50px;
+}
+
+#mainTitle, #mainBlurb {
+  color: black;
+}
+
+
+#mainTitle {
+  margin-top: 10%;
+}
+#mainBlurb {
+  margin-bottom: 10%;
+}
 .body {
     background-color: #27032c; 
 }
@@ -48,9 +73,11 @@
 .container {
     background-color: #27032c;
     height: 100%;
-    color: white;
+    color: #FF66C4;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 25%;
 }
 
 .row1 { 
@@ -61,7 +88,10 @@
     margin-left: 80px;  
 }
 
-.logo {
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
 }
 
 img {
