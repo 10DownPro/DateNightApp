@@ -1,0 +1,74 @@
+#restcontainer{
+  background-color: rgb(254, 250, 250);
+  
+  align-items: center;
+width: 300px;
+border: 15px solid brown;
+padding: 50px;
+margin: 20px;
+}
+
+.container{
+   
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image: url(
+    ./images/Screen\ Shot\ 2022-08-31\ at\ 6.33.50\ PM.png);
+   background-size: cover;
+   background-size: 100%;
+  
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+
+
+h1{
+  color:brown ;
+   text-align: center;
+    font-size: 90px;
+    justify-content: center;
+    justify-items: flex-start;
+   
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h2 {
+    color: brown;
+    
+    text-align: center;
+    font-size: 40px;
+   
+    
+}
+
+h3{
+    color:brown;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width: 992px) {
+    .btn-book-animated-fadeInUp-scrollto {
+      margin: 0 15px 0 0;
+      padding: 8px 20px;
+    }
+  }
+  
+
+  
