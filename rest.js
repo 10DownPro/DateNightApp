@@ -115,35 +115,18 @@ function getListofPlaces(lat, lon){
                 console.log(restaurant.poi.name)
             const restContainer = document.getElementById('restcontainer');
             restContainer.innerHTML += `<div>
-            <p style="color:black">${restaurant.poi.name}</p></div>
+            <p style="color:black">${restaurant.poi.name}</p>
+            <p style="color:black">${restaurant.poi.phone}</p>
+            <p style="color:black">${restaurant.poi.address}</p>
+            </div>
             <button onclick="Add to List">Add to List</button>
             `;
 
             } )
         });
      }
-    //  function addToList(index) {
-    //     // get the index and use it to search for the element
-    //     const click = document.getElementById(index);
-    //     const restContainer = click.getAttribute('id');
-        
-    //     console.log(restContainer);
+
+     function addrestauranttolist(){
+
+     }
     
-    //     if (!localStorage.watchList) {
-    //         // let watchListJSON = 
-    //         localStorage.setItem("watchList", "[]")
-    //         let watchList = localStorage.watchList;
-    //         console.log(watchList);
-    //         let tempWatchList = JSON.parse(watchList);
-    //         console.log(tempWatchList);
-    //         tempWatchList.push(movieArr[movieID]);
-    //         localStorage.watchList = JSON.stringify(tempWatchList);
-    //     }
-    //     else {
-    //         let watchList = localStorage.watchList;
-    //         console.log(watchList);
-    //         let tempWatchList = JSON.parse(watchList);
-    //         console.log(tempWatchList);
-    //         tempWatchList.push(movieArr[movieID]);
-    //         localStorage.watchList = JSON.stringify(tempWatchList);
-    //     }
