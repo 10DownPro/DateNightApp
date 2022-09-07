@@ -1,0 +1,29 @@
+.allMovieInfo{
+    text-align: center;
+    margin: 4px auto;
+    display: flexbox;
+}
+
+.movieImage {
+    border: 2px solid black;
+    border-radius: 15px;
+    opacity: 0.5;
+    transition: 0.25s ease-in-out;
+    margin: 4px;
+}
+
+.movieImage:hover {
+    opacity: 1;
+}
+
+.generateMovieButton {
+    transition: 0.25s ease-in-out;
+    font-size: 24px;
+    color: white;
+    background-color: #27032c;
+    border-radius: 15px;
+}
+
+.generateMovieButton:hover {
+    background-color: #FF66C4;
+}
