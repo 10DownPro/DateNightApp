@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LoveShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color:#27032c">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/LoveShop.png" id="logo" alt="Love shop logo" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./home.html">Home</a></li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact-us.html">Contact</a></li>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center" id="aboutHeader"></div>
+  
+<div id="homeInner" class="container-fluid text-center">
+  
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Movies</a></p>
+      <p><a href="#">Restaraunts</a></p>
+      <p><a href="#">Schedule</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1 id="mainTitle">Meet the Devs</h1>
+      <p id="mainBlurb">We met in class & made a cool thing.  </p>
+
+      
+      <div class="maincontainer text-center">
+        <div class="row">
+            <div class="col" id="keisha">
+                <img class="keisha" src="./images/keisha.svg" alt="girl smiling headshot">
+                Keisha
+              </div>
+          <div class="col" id="tvedt">
+            <img class="keisha" src="./images/tvedt.svg" alt="girl smiling headshot">
+            T'Vedt
+          </div>
+          <div class="col" id="quyana">
+            <img class="quyana" src="./images/quyana.svg" alt="girl smiling headshot">
+            Quyana
+          </div>
+          <div class="col" id="ethan">
+            <img class="ethan" src="" alt="guy smiling headshot">
+            Ethan
+          </div>
+        </div>
+      </div>
+      <hr>
+    
+    </div>
+
+    
+  </div>
+</div>
+
+<footer id="footer" class="container-fluid text-center">
+  <p>Copyright © 2022 | Powered by Date Night App</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+        crossorigin="anonymous"></script>
+</body>
+</html>
