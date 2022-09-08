@@ -1,0 +1,237 @@
+/* T'Vedts CSS */
+
+  .navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    padding: 50px;
+    height: 50px;
+  }
+  
+  .active {
+    background-color: #FF66C4;
+  }
+
+
+  .row.content {height: 450px}
+
+  
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 123vh;
+}
+  
+  @media screen and (max-width: 767px) {
+.sidenav {
+      height: auto;
+      padding: 15px;
+    }
+.row.content {height:auto;} 
+}
+
+.jumbotron {
+    background-image: url(./images/datenight.jpeg);
+    background-size: cover;
+    height: 80vh;
+}
+
+
+/* MAIN PAGE */
+
+.home {
+  background-color: #27032c;
+}
+
+.mainLogo {
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+
+H2 {
+  color: #00C2CB;
+  margin-top: 250px;
+  padding-left: 150px;
+}
+
+button {
+  margin-left: 150px;
+  margin-bottom: 200px;
+}
+
+video {
+  width: 500px;
+  padding-top: 140px;
+  padding-left: 65px;
+  video::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 1 !important;}
+}
+
+/* HOME PAGE */
+
+.body {
+    background-color: #27032c; 
+}
+
+#headerTitle {
+  padding-top: 10%;
+  font-size: 200px;
+}
+
+#blurb {
+  font-size: 50px;
+}
+
+#mainTitle, #mainBlurb {
+  color: black;
+}
+
+#mainTitle {
+  font-size: 500%;
+}
+
+#mainBlurb {
+  margin-bottom: 10%;
+  font-size: 25px;
+}
+
+.row1 { 
+    font-family: Impact;
+    margin: 10%;
+    padding-bottom: 75px;
+    margin-top: -80px;
+    margin-left: 80px;  
+}
+
+#logo {
+    width: 100px;
+    height: 80px;
+}
+
+#movieNight, #reservation, #calendar {
+  height: 150px;
+  width: 150px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+
+#homeLogo {
+  margin-top: 50px;
+}
+
+#mainButton {
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+/* MAIN PAGE IMAGE */
+
+#image {
+    width: 500px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    font-size: small;
+    color: white;
+    width: 100%;
+    padding-top: 100px;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+
+/* CONTACT PAGE */
+
+#contactHeader {
+  padding: 225px;
+  background-image: url(./images/date-night-2016.png);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 25%;
+
+}
+
+h1, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #FF66C4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #FF66C4;
+  }
+  
+  .formcontainer {
+    color: black;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  form {
+    padding: 30px;
+  }
+
+  /* ABOUT PAGE */
+
+  .keisha, .quyana, .tvedt, .ethan {
+    width: 175%;
+    padding-left: 150px;
+
+  }
+
+  #aboutHeader {
+    background-image: url(./images/teamwork.jpeg);
+    background-size: cover;
+    height: 55vh;
+    padding-bottom: 25%;
+}
+  
+
+  /* Images CSS  */
+
+  #dinnerSetup, #dateNightCouple {
+    width: 200px;
+    height: 200px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+
