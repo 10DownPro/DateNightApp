@@ -1,4 +1,5 @@
 /* T'Vedts CSS */
+
   .navbar {
     margin-bottom: 0px;
     border-radius: 0px;
@@ -11,11 +12,9 @@
   }
 
 
-  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
   .row.content {height: 450px}
 
   
-  /* Set gray background color and 100% height */
 .sidenav {
     padding-top: 20px;
     background-color: #f1f1f1;
@@ -37,7 +36,33 @@
 }
 
 
-/* HOME BODY */
+/* MAIN PAGE */
+
+.home {
+  background-color: #27032c;
+}
+
+.mainLogo {
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+
+H2 {
+  color: #00C2CB;
+  margin-top: 250px;
+  padding-left: 150px;
+}
+
+button {
+  margin-left: 150px;
+}
+
+/* HOME PAGE */
+
+.body {
+    background-color: #27032c; 
+}
 
 #headerTitle {
   padding-top: 10%;
@@ -62,10 +87,6 @@
   font-size: 25px;
 }
 
-.body {
-    background-color: #27032c; 
-}
-
 .wrapper {
     height: 100vh;
     background-color: #27032c;
@@ -86,8 +107,8 @@
 
 /* MAIN PAGE IMAGE */
 
-img {
-    width:500px;
+#image {
+    width: 500px;
     height: 500px;
     padding-left: 50px;
 }
@@ -124,10 +145,6 @@ h1, p {
     color: white;
 }
 
-  .maindesc {
-    justify-content: left;
-    align-items: left;
-  }
 
   input[type=text], select, textarea {
     width: 100%; 
@@ -173,11 +190,6 @@ h1, p {
 
   .keisha, .quyana, .tvedt, .ethan {
     width: 150%;
-  }
-
-  
-
-  .text-center {
   }
 
   #aboutHeader {
