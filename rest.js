@@ -97,7 +97,6 @@ console.log('activated');
 
 function getListofPlaces(lat, lon){
 
-
     fetch(`https://api.tomtom.com/search/2/categorySearch/restaurant.json?lat=${lat}&lon=${lon}&view=Unified&relatedPois=off&limit=100&key=x5oSQEqlYnrwnGwEFZLA7HK78PZWE59q`)
     
     .then(
