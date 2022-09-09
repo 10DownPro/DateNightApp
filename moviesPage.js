@@ -1,6 +1,7 @@
 //select a random movie from a user-chosen genre, release year, and popularity
 //movie grabbed using data from The Movie DB
 function getMovieByGenre(genre) {
+  
   console.log(genre);
 
   fetch(
