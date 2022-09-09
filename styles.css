@@ -18,7 +18,7 @@
 .sidenav {
     padding-top: 20px;
     background-color: #f1f1f1;
-    height: 123vh;
+    height: 140vh;
 }
   
   @media screen and (max-width: 767px) {
@@ -109,7 +109,7 @@ video {
     height: 80px;
 }
 
-#movieNight, #reservation, #calendar {
+#card-img-top {
   height: 150px;
   width: 150px;
   margin-top: 25px;
@@ -117,6 +117,18 @@ video {
   box-shadow: 5px 5px 10px black;
 }
 
+#card-img-top:hover {
+  background-color: #00C2CB;
+}
+
+.card-text {
+  color: black;
+}
+
+
+.btn {
+  background-color: #FF66C4;
+}
 
 #homeLogo {
   margin-top: 50px;
@@ -147,7 +159,8 @@ footer {
     position: fixed;
     bottom: 0px;
     text-align: center;
-}
+  }
+
 
 
 /* CONTACT PAGE */
