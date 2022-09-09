@@ -116,7 +116,7 @@ function getListofPlaces(lat, lon){
             restContainer.innerHTML += `<div>
             <p style="color:black">${restaurant.poi.name}</p>
             <p style="color:black">${restaurant.poi.phone}</p>
-            <p style="color:black">${restaurant.poi.address}</p>
+          
             </div>
             <button onclick="Add to List">Add to List</button>
             `;
