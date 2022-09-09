@@ -1,0 +1,100 @@
+body {
+  background-color: #27032c;
+  margin: 3px;
+  border: 3px;
+  padding: 3px;
+}
+
+nav {
+  background-color: white;
+  font: 24px Impact;
+}
+
+header {
+  font: 55px Impact;
+  color: white;
+  text-align: center;
+}
+
+.navbar-nav {
+  align-content: end;
+}
+
+.movies-container {
+  display: flexbox;
+  align-content: center;
+  margin: 4px auto;
+}
+
+.movieImage {
+  border: 1px solid white;
+  border-radius: 15px;
+  opacity: 1;
+  transition: 0.25s ease-in-out;
+  margin: 4px;
+  width: 200px;
+  height: auto;
+}
+
+.movieImage:hover {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  background-color: #ff66c4;
+}
+
+.btn {
+  transition: 0.25s ease-in-out;
+  font-size: 20px;
+  color: white;
+  background-color: #27032c;
+  border-radius: 15px;
+  border-color: #ff66c4;
+  width: 200px;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #00c2cb;
+  --bs-btn-border-color: #00c2cb;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #00c2cb;
+  --bs-btn-hover-border-color: #00c2cb;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00c2cb;
+  --bs-btn-active-border-color: #00c2cb;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #00c2cb;
+  --bs-btn-disabled-border-color: #00c2cb;
+}
+
+.addMovieButton {
+  background-color: #ff66c4;
+}
+
+.addMovieButton:hover {
+  background-color: white;
+}
+
+.row {
+  padding: 3px;
+  border: 3px;
+  margin: 3px;
+}
+
+.card {
+  background-color: #27032c;
+  color: white;
+  transition: 0.25s ease-in-out;
+  padding: 3px;
+  border: 3px;
+  margin: 3px;
+}
+
+.card:hover {
+  transition: 0.25s ease-in-out;
+  color: white;
+}

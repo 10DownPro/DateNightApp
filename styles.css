@@ -1,27 +1,26 @@
 /* T'Vedts CSS */
-  /* Remove the navbar's default margin-bottom and rounded borders */ 
+
   .navbar {
     margin-bottom: 0px;
     border-radius: 0px;
-    background-color: #27032c;
-    padding: 25px;
+    padding: 50px;
+    height: 50px;
   }
   
   .active {
     background-color: #FF66C4;
   }
 
-  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
   .row.content {height: 450px}
+
   
-  /* Set gray background color and 100% height */
 .sidenav {
     padding-top: 20px;
     background-color: #f1f1f1;
-    height: 100%;
+    height: 140vh;
 }
   
-  /* On small screens, set height to 'auto' for sidenav and grid */
   @media screen and (max-width: 767px) {
 .sidenav {
       height: auto;
@@ -32,25 +31,69 @@
 
 .jumbotron {
     background-image: url(./images/datenight.jpeg);
-    width: auto;
+    background-size: cover;
     height: 80vh;
 }
+
+
+/* MAIN PAGE */
+
+.home {
+  background-color: #27032c;
+}
+
+.mainLogo {
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+
+H2 {
+  color: #00C2CB;
+  margin-top: 250px;
+  padding-left: 150px;
+}
+
+button {
+  margin-left: 150px;
+  margin-bottom: 200px;
+}
+
+video {
+  width: 500px;
+  padding-top: 140px;
+  padding-left: 65px;
+  video::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 1 !important;}
+}
+
+/* HOME PAGE */
 
 .body {
     background-color: #27032c; 
 }
 
-.wrapper {
-    height: 100vh;
-    background-color: #27032c;
+#headerTitle {
+  padding-top: 10%;
+  font-size: 200px;
 }
 
-.container {
-    background-color: #27032c;
-    height: 100%;
-    color: white;
-    display: flex;
-    align-items: center; 
+#blurb {
+  font-size: 50px;
+}
+
+#mainTitle, #mainBlurb {
+  color: black;
+}
+
+#mainTitle {
+  font-size: 500%;
+}
+
+#mainBlurb {
+  margin-bottom: 10%;
+  font-size: 25px;
 }
 
 .row1 { 
@@ -61,27 +104,68 @@
     margin-left: 80px;  
 }
 
-.logo {
+#logo {
+    width: 100px;
+    height: 80px;
 }
 
-img {
-    width:500px;
+#card-img-top {
+  height: 150px;
+  width: 150px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+#card-img-top:hover {
+  background-color: #00C2CB;
+}
+
+.card-text {
+  color: black;
+}
+
+
+.btn {
+  background-color: #FF66C4;
+}
+
+#homeLogo {
+  margin-top: 50px;
+}
+
+#mainButton {
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+/* MAIN PAGE IMAGE */
+
+#image {
+    width: 500px;
     height: 500px;
     padding-left: 50px;
 }
+
+/* FOOTER SECTION */
 
 footer {
     font-size: small;
     color: white;
     width: 100%;
+    padding-top: 100px;
     padding: 10px;
     background-color: black;
     position: fixed;
     bottom: 0px;
     text-align: center;
-}
+  }
 
-.contactheader {
+
+
+/* CONTACT PAGE */
+
+#contactHeader {
   padding: 225px;
   background-image: url(./images/date-night-2016.png);
   background-size: cover;
@@ -97,10 +181,6 @@ h1, p {
     color: white;
 }
 
-  .maindesc {
-    justify-content: left;
-    align-items: left;
-  }
 
   input[type=text], select, textarea {
     width: 100%; 
@@ -132,9 +212,39 @@ h1, p {
     color: black;
     border-radius: 5px;
     background-color: #f2f2f2;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
+
+  form {
+    padding: 30px;
+  }
+
+  /* ABOUT PAGE */
+
+  .keisha, .quyana, .tvedt, .ethan {
+    width: 175%;
+    padding-left: 150px;
+
+  }
+
+  #aboutHeader {
+    background-image: url(./images/teamwork.jpeg);
+    background-size: cover;
+    height: 55vh;
+    padding-bottom: 25%;
+}
   
+
+  /* Images CSS  */
+
+  #dinnerSetup, #dateNightCouple {
+    width: 200px;
+    height: 200px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+
