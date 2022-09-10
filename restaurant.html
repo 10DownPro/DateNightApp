@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rest.css">
+    
+</head>
+<body onload="main()" >
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Restaurant Hub </h1>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-12 header text-center">
+            
+            <h2>Fine Dining and Cuisine</h2>
+            <nav><p><h3>Search for a Restaurant</h3></p></nav>
+          </div>
+        </div>
+    </div>
+    
+     
+       
+    <div class="row">
+        <div class="Search Box">
+          <form id="search-form">
+            <div class="input-group input-group-lg">
+            <p>
+             <label for="city"> CITY</label>
+              <input 
+                id="city"
+                name="City-and-State"
+                type="text"
+                title="upper/lowercase letters only"
+                placeholder="Enter your city"
+                style="width: 280px;">
+            </p>
+            <p>
+
+                <label for="state"> STATE</label>
+                <input 
+                  id="state"
+                  name="City-and-State"
+                  type="text"
+                  title="upper/lowercase letters only"
+                  placeholder="Enter your state"
+                  style="width: 280px;">
+
+            </p>
+
+              
+              <button type="submit">Find a Table
+              <!-- <a href="#find-a-table" class="btn-book-animated-fadeInUp-scrollto">Find a Table</a> -->
+              
+              </button>
+
+              <button type="addrestauranttolist">Add To List</button>
+
+                
+              <!-- </button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="restcontainer" >
+      </div>
+      
+    <script src="./rest.js"></script>
+</body>
+</html>
