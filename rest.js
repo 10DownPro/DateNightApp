@@ -112,11 +112,14 @@ function getListofPlaces(lat, lon){
             console.log(data.results);
             data.results.forEach( (restaurant) => {
                 console.log(restaurant.poi.name)
-            const restContainer = document.getElementById('restcontainer');
+                console.log(restaurant.address.freeformAddress)
+                
+            const restContainer = document.getElementById('restContainer');
+            restContainer.style = "display: flexbox;"
             restContainer.innerHTML += `<div>
-            <p style="color:black">${restaurant.poi.name}</p>
-            <p style="color:black">${restaurant.poi.phone}</p>
-          
+            <p style="color:black">Name:${restaurant.poi.name}</p>
+            <p style="color:black">Phone:${restaurant.poi.phone}</p>
+            <p style="color:black">Address:${restaurant.address.freeformAddress}</p>
             </div>
             <button onclick="Add to List">Add to List</button>
             `;
@@ -125,7 +128,4 @@ function getListofPlaces(lat, lon){
         });
      }
 
-     function addrestauranttolist(){
-
-     }
     
