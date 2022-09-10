@@ -5,9 +5,16 @@ body {
   padding: 3px;
 }
 
-nav {
-  background-color: white;
-  font: 24px Impact;
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  padding: 50px;
+  max-height: fit-content;
+}
+
+#logo {
+  width: 100px;
+  height: 80px;
 }
 
 header {
@@ -16,9 +23,6 @@ header {
   text-align: center;
 }
 
-.navbar-nav {
-  align-content: end;
-}
 
 .movies-container {
   display: flexbox;
