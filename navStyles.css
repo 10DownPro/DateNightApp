@@ -2,12 +2,12 @@
     max-width: 40%;
     max-height: 40%;
 }
-/* #navbarNavDropdown{
+ #navbarNavDropdown{
     /* padding-left: 8px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+} 
 
 
 .navbar{
@@ -72,4 +72,10 @@ margin: 5px;
 
 #schedule{
     background-color: brown;
+}
+
+#mainBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

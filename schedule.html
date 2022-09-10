@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="./navStyles.css">
+    <link rel="stylesheet" href="./navStyles.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -15,63 +15,52 @@
       crossorigin="anonymous"
     />
 
-  <!-- Test link -->
-  <!-- <link rel="stylesheet" href="extensions/reorder-rows/bootstrap-table-reorder-rows.css"> -->
-  
-
+    <!-- Test link -->
+    <!-- <link rel="stylesheet" href="extensions/reorder-rows/bootstrap-table-reorder-rows.css"> -->
   </head>
   <body>
-
-
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-md">
-          <a class="navbar-brand" href="#"><img src="./images/LoveShop.png" id="test" alt="Love shop logo" class="d-inline-block align-text-top"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse container-md" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-md">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./images/LoveShop.png"
+            id="test"
+            alt="Love shop logo"
+            class="d-inline-block align-text-top"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse container-md"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-      <div class="container-md" id="schedule">
-        <div class="timeSlot dropZone" id="ts1"><div class="draggable" draggable= "true">1</div></div>
-        <div class="timeSlot dropZone"  id="ts2"><div class="draggable" draggable= "true">2</div></div>
-        <div class="timeSlot dropZone"  id="ts3"><div class="draggable" draggable= "true">3</div></div>
-        <div class="timeSlot dropZone"  id="ts4"><div class="draggable" draggable= "true">4</div></div>
       </div>
-      <!-- <table>
-        <thead>
-         <tr>  
-          <th>EMAIL</th>
-         </tr>
-        </thead>
-        <tbody>
-         <tr draggable="true" ondragstart="start()"  ondragover="dragover()">  
-          <td>jhon@gmail.com</td>
-         </tr>
-         <tr draggable="true" ondragstart="start()" ondragover="dragover()">  
-          <td>marygirl@yahoo.com</td>
-         </tr>
-         <tr draggable="true" ondragstart="start()" ondragover="dragover()">  
-          <td>cha24@yahoo.com</td>
-         </tr>
-        </tbody>
-        </table> -->
-        
-        
-
+    </nav>
+    <div class="container-md" id="mainBody">
+      <h1>Date night generator</h1>
+      <button class="btn btn-dark" id="generator" onclick="generateDate()">Generate a date!</button>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -79,7 +68,7 @@
     ></script>
     <!-- bootstrap table test -->
     <!-- <script src=".../jquery.tablednd.js"></script> -->
-  <!-- <script src="extensions/reorder-rows/bootstrap-table-reorder-rows.js"></script> -->
-  <script src="./storage.js"></script>
+    <!-- <script src="extensions/reorder-rows/bootstrap-table-reorder-rows.js"></script> -->
+    <script src="./schedule.js"></script>
   </body>
 </html>
