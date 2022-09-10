@@ -1,11 +1,10 @@
 body{
- 
-  background-image: url(
- ./restimages/Screen\ Shot\ 2022-09-07\ at\ 6.05.54\ PM.png);
-  background-size: cover;
-  background-size: 100%;
-  font-weight: bolder;
-  color: aqua;
+background-image: url(
+./restimages/Screen\ Shot\ 2022-09-07\ at\ 6.05.54\ PM.png);
+background-size: cover;
+background-size: 100%;
+font-weight: bolder;
+color: aqua;
 }
 
 #restContainer{
@@ -49,6 +48,18 @@ margin: auto;
 #logo {
   width: 100px;
   height: 80px;
+}
+
+footer {
+  font-size: small;
+  color: white;
+  width: 100%;
+  padding-top: 100px;
+  padding: 10px;
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
 }
 
 .container{
