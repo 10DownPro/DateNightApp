@@ -1,4 +1,5 @@
 function main() {
+    console.log("I'm here");
 
     const form = document.getElementById('search-form');
     const inputCity = document.getElementById('city');

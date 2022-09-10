@@ -1,4 +1,5 @@
 body{
+
 background-image: url(
 ./restimages/Screen\ Shot\ 2022-09-07\ at\ 6.05.54\ PM.png);
 background-size: cover;
@@ -9,18 +10,17 @@ color: aqua;
 
 #restContainer{
 background-color: rgb(254, 250, 250);
-width: 50%;
+width: 500px;
 border: 15px solid turquoise;
 padding: 50px;
 margin: auto;
-
 }
 
 .navbar {
   margin-bottom: 0px;
   border-radius: 0px;
   padding: 50px;
-  height: 50px;
+
 }
 
 .active {
@@ -69,8 +69,14 @@ footer {
 }
 
 .row{
+  justify-content: center;
   text-align: center;
 }
+
+/* .box
+{
+  align-content: center;
+} */
 
 
 @media screen and (max-width: 768px) {
