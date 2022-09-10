@@ -1,9 +1,8 @@
 // let restArr = [];
 // console.log(restArr);
 function main() {
-  const form = document.getElementById("search-form");
-  const inputCity = document.getElementById("city");
-  const inputState = document.getElementById("state");
+  console.log("I'm here");
+
 
   form.addEventListener("submit", (e) => {
     // capture the event and prevent default

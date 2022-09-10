@@ -1,11 +1,10 @@
 //select a random movie from a user-chosen genre, release year, and popularity
 //movie grabbed using data from The Movie DB
 function getMovieByGenre(genre) {
-  
   console.log(genre);
 
   fetch(
-    `https://api.themoviedb.org/3/discover/movie?with_genres=${genre}&primary_release_year=2022&sort_by=popularity.desc&api_key=${apiKey}`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=${genre}&primary_release_year=2022&sort_by=popularity.desc&api_key=5939701731a13d332a596770de3bd499`
   )
     .then(
       (response) => response.json(),
@@ -25,17 +24,25 @@ function getMovieByGenre(genre) {
       movieDiv.innerHTML = `<section class="card text-center">
       <div class="card-body">
         <h5 class="card-title display-6">${movie.original_title}</h5>
-        <img class="movieImage" id="movieImage" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}?api_key=${apiKey}"></img>
+        <img class="movieImage" id="movieImage" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}?api_key=5939701731a13d332a596770de3bd499"></img>
         <p class="card-text">${movie.overview}</p>
         <div id="criticDiv"></div>
-        <button class="addMovieButton btn btn-primary" type="submit" onclick="addMovie()">Add to List</button>
+        <button class="addMovieButton btn btn-primary" type="submit" id="addButton">Add to List</button>
         </div>
     </div>`;
+
+    document.addEventListener("click", (e) => {
+      if (e.target.id="addButton") {
+        console.log(JSON.stringify(movie, null, 2))
+        let tempMovie = JSON.stringify(movie);
+        addMovie(tempMovie)
+      }
+    })
 
       //make 2nd api call to NYT to get critic info
       //display critic choice on screen
 
-      const url = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie.original_title}&api-key=${apiKeyNyt}`;
+      const url = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie.original_title}&api-key=fjl0z0T3nQVkb1tgkkFh2HXkILcY8CBE`;
       const options = {
         method: "GET",
         headers: {
@@ -80,7 +87,7 @@ function getRandomMovie() {
     "action",
     "comedy",
     "romance",
-    "suspence",
+    "suspense",
     "horror",
   ];
 
@@ -91,4 +98,22 @@ function getRandomMovie() {
   const randomGenre = randomCategoryArray[randomNumber];
 
   const randomMovie = getMovieByGenre(randomGenre);
-}
+};
+
+function addMovie(tempMovie) {
+  if (!localStorage.movies) {
+    localStorage.setItem("movies", "[]");
+    let movies = JSON.parse(localStorage.movies);
+    let movie = JSON.parse(tempMovie);
+    movies.push(movie);
+    let tempMovies = JSON.stringify(movies);
+    localStorage.movies = tempMovies;
+  }
+  else {
+    let movies = JSON.parse(localStorage.movies);
+    let movie = JSON.parse(tempMovie);
+    movies.push(movie);
+    let tempMovies = JSON.stringify(movies);
+    localStorage.movies = tempMovies;
+  }
+};

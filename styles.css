@@ -5,36 +5,20 @@
     border-radius: 0px;
     padding: 50px;
     height: 50px;
+    max-height: fit-content;
   }
   
   .active {
     background-color: #FF66C4;
   }
 
-
-  .row.content {height: 450px}
-
-  
-.sidenav {
-    padding-top: 20px;
-    background-color: #f1f1f1;
-    height: 140vh;
-}
-  
-  @media screen and (max-width: 767px) {
-.sidenav {
-      height: auto;
-      padding: 15px;
-    }
-.row.content {height:auto;} 
-}
+.row.content {height: 450px}
 
 .jumbotron {
     background-image: url(./images/datenight.jpeg);
     background-size: cover;
     height: 80vh;
-}
-
+  }
 
 /* MAIN PAGE */
 
@@ -45,7 +29,11 @@
 .mainLogo {
   width: 100px;
   height: 100px;
-  margin-left: 100px;
+  margin-left: 35%;
+  margin-bottom: -20%;
+  margin-top: 20%;
+  margin-left: 30%;
+  padding-top: 170px;
 }
 
 H2 {
@@ -63,15 +51,22 @@ video {
   width: 500px;
   padding-top: 140px;
   padding-left: 65px;
-  video::-webkit-media-controls-panel {
-    display: none !important;
-    opacity: 1 !important;}
+}
+
+video:-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
 }
 
 /* HOME PAGE */
 
 .body {
     background-color: #27032c; 
+}
+
+.maincontainer {
+  padding-left: 10%;
+  padding-bottom: 10%;
 }
 
 #headerTitle {
@@ -93,7 +88,9 @@ video {
 
 #mainBlurb {
   margin-bottom: 10%;
-  font-size: 25px;
+  font-size: 40px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .row1 { 
@@ -132,6 +129,10 @@ video {
 
 #homeLogo {
   margin-top: 50px;
+  width: 200px;
+  height: 150px;
+  display: 
+  
 }
 
 #mainButton {
@@ -160,8 +161,6 @@ footer {
     bottom: 0px;
     text-align: center;
   }
-
-
 
 /* CONTACT PAGE */
 
@@ -233,9 +232,16 @@ h1, p {
   #aboutHeader {
     background-image: url(./images/teamwork.jpeg);
     background-size: cover;
-    height: 55vh;
-    padding-bottom: 25%;
-}
+    height: 65vh;
+  }
+
+  #mainTitle {
+    margin-top: 50px;
+  }
+
+  #homeInner {
+  padding-right: 9%;
+  }
   
 
   /* Images CSS  */
