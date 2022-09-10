@@ -45,7 +45,8 @@
 .mainLogo {
   width: 100px;
   height: 100px;
-  margin-left: 5%;
+  margin-left: 30%;
+  padding-top: 170px;
 }
 
 H2 {
@@ -63,9 +64,11 @@ video {
   width: 500px;
   padding-top: 140px;
   padding-left: 65px;
-  video:-webkit-media-controls-panel {
-    display: none !important;
-    opacity: 1 !important;}
+}
+
+video:-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
 }
 
 /* HOME PAGE */
