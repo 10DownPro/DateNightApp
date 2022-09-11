@@ -119,6 +119,10 @@ video:-webkit-media-controls-panel {
     height: 80px;
 }
 
+.card {
+  margin: 10px;
+}
+
 #card-img-top {
   height: 150px;
   width: 150px;
@@ -279,6 +283,16 @@ h1, p {
   #homeInner {
   padding-right: 9%;
   }
+
+  .dropdown-menu {
+  margin-right: 50px;
+  }
+
+  #dropdownMenuButton1 {
+    margin: 0px;
+    background-color: #FF66C4;
+  }
+
   
 
   /* Images CSS  */
