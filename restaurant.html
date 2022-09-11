@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./rest.css">
     
 </head>
 <body onload="main()" >
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color:#27032c">
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#27032c">
     <div class="container-fluid">
       <a class="navbar-brand" href="./home.html"><img src="./images/LoveShop.png" id="logo" alt="Love shop logo" class="d-inline-block align-text-top"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,12 +45,7 @@
   </nav>
 
 
-  <!-- <div class="sidenav">
-    <div class="container-fluid">
-     <img src="./images/LoveShop.png" id="logo" alt="Love shop logo" class="d-inline-block align-text-top"></a>
-      <a href="./home.html">Home</style>  </a>
- </div>
- </div> -->
+
     
     <div class="container">
       <h1>Restaurant Hub </h1>
@@ -70,54 +65,53 @@
     
      
        
-    <div class="row">
-        <div class="Search Box">
-          <form id="search-form">
-            <div class="input-group input-group-lg">
-            <p>
-             <label for="city"> CITY</label>
-              <input 
-                id="city"
-                name="City-and-State"
-                type="text"
-                title="upper/lowercase letters only"
-                placeholder="Enter your city"
-                style="width: 280px;">
-            </p>
-            <p>
-
-                <label for="state"> STATE</label>
+    <div class="d-flex justify-content-center">
+        <div>
+          <form class="col-sm-3 d-flex justify-content-center"  id="search-form">
+            <div>
+              <p>
+              <label for="city"> CITY</label>
                 <input 
-                  id="state"
+                  id="city"
                   name="City-and-State"
                   type="text"
                   title="upper/lowercase letters only"
-                  placeholder="Enter your state"
+                  placeholder="Enter your city"
                   style="width: 280px;">
+              </p>
+              <p>
 
-            </p>
+                  <label for="state"> STATE</label>
+                  <input 
+                    id="state"
+                    name="City-and-State"
+                    type="text"
+                    title="upper/lowercase letters only"
+                    placeholder="Enter your state"
+                    style="width: 280px;">
+
+              </p>
 
               
               <button type="submit">Find a Table</button>
 
-              <button type="addrestauranttolist">Add To List</button>
+              <!-- <button type="addrestauranttolist">Add To List</button> -->
 
                 
             </div>
           </form>
         </div>
       </div>
-      
-      <div id="restContainer" style="display:none" >
-     
+      <div id="restContainer" style="display: none;">
+
       </div>
       
-      <footer id="footer" class="container-fluid text-center">
+      <!-- <footer id="footer" class="container-fluid text-center">
         <p>Copyright © 2022 | Powered by LoveShop</p>
-      </footer>
+      </footer> -->
 
     <script src="./rest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="./kTest.js"></script>
+    <!-- <script src="./kTest.js"></script> -->
 </body>
 </html>

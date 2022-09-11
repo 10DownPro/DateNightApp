@@ -4,7 +4,7 @@ function getMovieByGenre(genre) {
   console.log(genre);
 
   fetch(
-    `https://api.themoviedb.org/3/discover/movie?with_genres=${genre}&primary_release_year=2022&sort_by=popularity.desc&api_key=${apiKey}`
+    `https://api.themoviedb.org/3/discover/movie?with_genres=${genre}&primary_release_year=2022&sort_by=popularity.desc&api_key=5939701731a13d332a596770de3bd499`
   )
     .then(
       (response) => response.json(),
@@ -24,7 +24,7 @@ function getMovieByGenre(genre) {
       movieDiv.innerHTML = `<section class="card text-center">
       <div class="card-body">
         <h5 class="card-title display-6">${movie.original_title}</h5>
-        <img class="movieImage" id="movieImage" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}?api_key=${apiKey}"></img>
+        <img class="movieImage" id="movieImage" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}?api_key=5939701731a13d332a596770de3bd499"></img>
         <p class="card-text">${movie.overview}</p>
         <div id="criticDiv"></div>
         <button class="addMovieButton btn btn-primary" type="submit" id="addButton">Add to List</button>
@@ -42,7 +42,7 @@ function getMovieByGenre(genre) {
       //make 2nd api call to NYT to get critic info
       //display critic choice on screen
 
-      const url = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie.original_title}&api-key=${apiKeyNyt}`;
+      const url = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${movie.original_title}&api-key=fjl0z0T3nQVkb1tgkkFh2HXkILcY8CBE`;
       const options = {
         method: "GET",
         headers: {
