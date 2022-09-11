@@ -26,7 +26,7 @@ function generateDate() {
 function displayRestaurant(restaurant) {
     console.log(restaurant);
     const mainBody = document.getElementById("mainBody");
-    mainBody.innerHTML += `<div id = "restDiv" class="container-md"></div>`
+    mainBody.innerHTML += `<div id = "restDiv" class="col-md"></div>`
     let restDiv = document.getElementById("restDiv");
     let tempName = restaurant.poi.name;
     let tempAdd = restaurant.address.freeformAddress
@@ -34,12 +34,15 @@ function displayRestaurant(restaurant) {
     `
     <div class="card" id="${tempName}">
     <h2>${tempName}</h2>
-    <p></p>
+    
     </div>
     `
     let tempCard = document.getElementById(`${tempName}`);
     if (restaurant.poi.phone) {
         tempCard.innerHTML += `<p>${restaurant.poi.phone}</p>`
+    }
+    if (restaurant.poi.url) {
+        tempCard.innerHTML += `<a href=${restaurant.poi.url}>${restaurant.poi.url}</a>`
     }
 
 };

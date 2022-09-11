@@ -2,8 +2,9 @@
 // console.log(restArr);
 function main() {
   console.log("I'm here");
-
-
+  const form = document.getElementById('search-form');
+  const inputCity = document.getElementById('city');
+  const inputState = document.getElementById('state');
   form.addEventListener("submit", (e) => {
     // capture the event and prevent default
     e.preventDefault();
@@ -129,7 +130,7 @@ function getListofPlaces(lat, lon) {
   // console.log(restArr);
   console.log("object");
   const restContainer = document.getElementById("restContainer");
-  restContainer.style = "display: flex";
+  restContainer.style = "display: flexbox";
   restContainer.innerHTML = ``;
 
   fetch(
