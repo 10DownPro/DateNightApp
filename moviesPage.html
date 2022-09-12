@@ -41,8 +41,8 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="./moviespage.html">Movies</a></li>
-                  <li><a class="dropdown-item" href="./contact-us.html">Restaurants</a></li>
-                  <li><a class="dropdown-item" href="./schedule">Schedule Date</a></li>
+                  <li><a class="dropdown-item" href="./restaurant.html">Restaurants</a></li>
+                  <li><a class="dropdown-item" href="./schedule.html">Schedule Date</a></li>
                 </ul>
               </li>
             <li class="nav-item">
@@ -70,8 +70,7 @@
         <div class="col">
           <p>
           <button
-            class="btn btn-primary"
-            onclick="getMovieByGenre('action')"
+            class="btn btn-primary genre"
             >Action</button
           >
           </p> 
@@ -79,16 +78,14 @@
         <div class="col">
         <p>
           <button
-            class="btn btn-primary"
-            onclick="getMovieByGenre('comedy')"
+            class="btn btn-primary genre"
             >Comedy</button
           >
         </p></div>
         <div class="col">
         <p>
           <button
-            class="btn btn-primary"
-            onclick="getMovieByGenre('romance')"
+            class="btn btn-primary genre"
             >Romance</button
           >
         </p></div>
@@ -99,24 +96,23 @@
         <div class="col">
         <p>
           <button
-            class="btn btn-primary"
-            onclick="getMovieByGenre('suspense')"
+            class="btn btn-primary genre"
             >Suspense</button
           >
         </p></div>
         <div class="col">
         <p>
           <button
-            class="btn btn-primary"
-            onclick="getMovieByGenre('horror')"
+            class="btn btn-primary genre"
+         
             >Horror</button
           >
         </p></div>
         <div class="col">
         <p>
           <button
-            class="btn btn-primary"
-            onclick="getRandomMovie()"
+            class="btn btn-primary genre"
+            
             >Random</button
           >
         </p>
@@ -128,7 +124,7 @@
     <footer id="footer" class="container-fluid text-center">
       <p>Copyright © 2022 | Quyana Barrow for Love Shop</p>
     </footer>
-    <script src="./apiKey.js"></script>
+    <!-- <script src="./apiKey.js"></script> -->
     <script src="moviesPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </body>

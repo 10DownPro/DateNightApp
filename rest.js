@@ -130,7 +130,7 @@ function getListofPlaces(lat, lon) {
   // console.log(restArr);
   console.log("object");
   const restContainer = document.getElementById("restContainer");
-  restContainer.style = "display: flexbox";
+  restContainer.style = "display: flexbox; flex-wrap: wrap;";
   restContainer.innerHTML = ``;
 
   fetch(
@@ -155,7 +155,7 @@ function getListofPlaces(lat, lon) {
           let divId = idNum.concat("Div")
           console.log(divId);
           restContainer.innerHTML += `
-            <div id="${divId}">
+            <div id="${divId}" class="card">
                 <p style="color:black">${restaurant.poi.name}</p>
                 <p style="color:black">${restaurant.address.freeformAddress}</p>
             </div>
@@ -164,7 +164,7 @@ function getListofPlaces(lat, lon) {
         if(restaurant.poi.phone){
               restDiv.innerHTML += `<p style="color:black">${restaurant.poi.phone}</p>`
           };
-          restDiv.innerHTML +=`<button id="${idNum}" class="addButton">Add to List</button>`
+          restDiv.innerHTML +=`<button id="${idNum}" class="addButton btn btn-primary">Add to List</button>`
         //     let button = document.getElementById(`${index}`);
         //     button.addEventListener("click", callAddToList(`${restArr, index}`) )
         // })
@@ -175,7 +175,9 @@ function getListofPlaces(lat, lon) {
       document.addEventListener("click", (e) => {
         let idNum = e.target.id;
         // console.log(typeof i);
-        if (e.target.className === "addButton") {
+        // if (e.target.className === "addButton")
+      if(e.target.classList.contains("addButton"))
+        {
           addToList(restArr, idNum);
         }
       });
