@@ -17,6 +17,9 @@
 .jumbotron {
     background-image: url(./images/datenight.jpeg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
     height: 80vh;
   }
 
@@ -184,6 +187,7 @@ footer {
   background-image: url(./images/date-night-2016.png);
   background-size: cover;
   position: relative;
+  
   padding-bottom: 25%;
 
 }
@@ -273,6 +277,9 @@ h1, p {
   #aboutHeader {
     background-image: url(./images/teamwork.jpeg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
     height: 70vh;
   }
 
