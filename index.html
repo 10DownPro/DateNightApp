@@ -12,36 +12,33 @@
 </head>
 <body class="home">
 
-<div class="row">
-    <div class="col-6">
-        <div class="container">
-            <img src="./images/LoveShop.png" id="mainLogo" alt="LoveShop logo">
-        </div>                
-        <h2 style="font-size: 55px">Fun things to do<br>
-           for you & your boo.</h2>
-           <p class="maindesc" style="font-size: 25px"> Search, review & schedule date night.</p>
-           <a href="./home.html"><button>Book Your Date</button></a>
+    <div class="row" id="mainRow">
+        <div class="col-sm-4">
+            <div class="container">
+                <img src="./images/LoveShop.png" id="mainLogo" alt="LoveShop logo">
 
+        <div class="col" id="mainCol">
+                <h1 id="tagline">Fun things to do for you & your boo.</h1>
+                <p id="mainBlurb">Search, review & schedule date night.</p>
+        </div>
+                <a href="./home.html" class="btn btn-primary" id="mainButton">Book Your Date</a>    
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <video loop autoplay muted >
+
+                <source src="media/mainimage.webm"
+                        type="video/webm">
+
+                <source src="media/mainimage.mp4"
+                        type="video/mp4">
+
+                Sorry, your browser doesn't support embedded videos.
+             </video>
+        </div>
     </div>
-    <div class="col-6">
-    <div class="imageContainer">
-        <video loop autoplay muted >
 
-            <source src="media/mainimage.webm"
-            type="video/webm">
-
-            <source src="media/mainimage.mp4"
-                    type="video/mp4">
-        
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-    </div>
-
-    </div>
-  </div>
-
-
-      
       <footer id="footer" class="container-fluid text-center">
         <p>Copyright © 2022 | Powered by LoveShop</p>
       </footer>

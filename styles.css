@@ -12,8 +12,6 @@
     background-color: #FF66C4;
   }
 
-.row.content {height: 450px}
-
 .jumbotron {
     background-image: url(./images/datenight.jpeg);
     background-size: cover;
@@ -24,36 +22,57 @@
   }
 
 /* MAIN PAGE */
+html {
+  min-height: 100%;
+}
 
 .home {
+  min-height: 50%;
   background-color: #27032c;
+  text-align: center;
+}
+
+.container {
+text-align: center;
+}
+
+#mainCol,  {
+  text-align: left;
 }
 
 #mainLogo {
   width: 200px;
   height: 150px;
-  margin-left: 35%;
-  margin-bottom: -45%;
   margin-top: 10%;
-  margin-left: 30%;
 }
 
+#mainButton {
+margin-top: 10px;
+}
 
-H2 {
+#mainButton:hover {
+background-color: #00C2CB;
+}
+
+#tagline {
   color: #00C2CB;
-  margin-top: 250px;
-  padding-left: 150px;
+    font-size: 43px;
 }
 
-button {
-  margin-left: 150px;
-  margin-bottom: 200px;
+#mainBlurb {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 video {
   width: 500px;
-  padding-top: 140px;
-  padding-left: 65px;
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    padding-top: 75px;
+    padding-bottom: 65px;
+    
 }
 
 video:-webkit-media-controls-panel {
@@ -67,11 +86,6 @@ video:-webkit-media-controls-panel {
     background-color: #27032c; 
 }
 
-.maincontainer {
-  padding-left: 10%;
-  padding-bottom: 10%;
-}
-
 #headerTitle {
   padding-top: 10%;
   font-size: 200px;
@@ -81,7 +95,7 @@ video:-webkit-media-controls-panel {
   font-size: 50px;
 }
 
-#aboutTitle, #mainBlurb, #homeTitle, #homeBlurb {
+#aboutTitle, #homeTitle, #homeBlurb {
   color: black;
 }
 
@@ -153,19 +167,6 @@ video:-webkit-media-controls-panel {
   height: 150px;
 }
 
-#mainButton {
-  margin-top: 10px;
-  margin-left: -10px;
-}
-
-/* MAIN PAGE IMAGE */
-
-#image {
-    width: 500px;
-    height: 500px;
-    padding-left: 50px;
-}
-
 /* FOOTER SECTION */
 
 footer {
@@ -187,12 +188,10 @@ footer {
   background-image: url(./images/date-night-2016.png);
   background-size: cover;
   position: relative;
-  
   padding-bottom: 25%;
-
 }
 
-h1, p {
+p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,14 +215,12 @@ h1, p {
     font-weight: bold;
     white-space: nowrap;
     padding-left: 80%;
-
   }
 
   #dateNightContact {
     margin-top: 95%;
     width: 500px;
     margin-left: -25%;
-    
   }
 
   input[type=text], select, textarea {
@@ -300,8 +297,6 @@ h1, p {
     background-color: #FF66C4;
   }
 
-  
-
   /* Images CSS  */
 
   #dinnerSetup, #dateNightCouple {
@@ -311,4 +306,3 @@ h1, p {
     padding-left: 25px;
     padding-top: 15px;
   }
-
