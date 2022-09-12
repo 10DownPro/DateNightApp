@@ -19,9 +19,9 @@
     <!-- <link rel="stylesheet" href="extensions/reorder-rows/bootstrap-table-reorder-rows.css"> -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-md">
-        <a class="navbar-brand" href="#"
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navBar">
+      <div class="container-md ">
+        <a class="navbar-brand" href="./home.html"
           ><img
             src="./images/LoveShop.png"
             id="test"
@@ -42,10 +42,11 @@
         <div
           class="collapse navbar-collapse container-md"
           id="navbarNavDropdown"
+
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -57,10 +58,13 @@
         </div>
       </div>
     </nav>
-    <div class="container-md" id="mainBody">
+    <div class="container-fluid" id="mainBody">
       <h1>Date night generator</h1>
       <button class="btn btn-dark" id="generator" onclick="generateDate()">Generate a date!</button>
     </div>
+    <footer id="footer" class="container-fluid text-center sticky-sm-bottom">
+      <p>Copyright © 2022 | Ethan Powell for Love Shop</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

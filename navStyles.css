@@ -4,14 +4,17 @@
 }
  #navbarNavDropdown{
     /* padding-left: 8px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: end;
+    
 } 
 
 
 .navbar{
     max-height: fit-content;
+    /* background-color: #23052A; */
 }
 
 /* .navItem{
@@ -78,4 +81,22 @@ margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: #23052A; */
+    height: 100vh;
+    background-color: steelblue;
+    /* width: 100vh; */
+}
+.movieImage{
+    width: 50%;
+    height: auto;
+}
+
+#generator{
+    background-color: #FF66C4;
+}
+
+body{
+    background-color: #23052A;
+    
+
 }

@@ -10,10 +10,12 @@ color: aqua;
 
 #restContainer{
 background-color: rgb(254, 250, 250);
-width: 500px;
+/* width: 500px; */
 border: 15px solid turquoise;
 padding: 50px;
 margin: auto;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .navbar {
@@ -112,11 +114,12 @@ h3{
       margin: 0 15px 0 0;
       padding: 8px 20px;
     }
-  }
-  
-  
-  
+}
 
-  
+.btn{
+  background-color: #FF66C4;background-color: #FF66C4;
+}
 
-  
+.card{
+  background-color: turquoise;
+}
