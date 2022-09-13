@@ -18,7 +18,7 @@
     background-attachment: fixed;
     background-position: center center; 
     background-repeat: no-repeat;
-    height: 65vh;
+    height: 80vh;
   }
 
 /* MAIN PAGE */
@@ -36,7 +36,7 @@ html {
 text-align: center;
 }
 
-#mainCol,  {
+#mainCol {
   text-align: left;
 }
 
@@ -75,7 +75,7 @@ video {
 
 }
 
-video:-webkit-media-controls-panel {
+.video:-webkit-media-controls-panel {
   display: none !important;
   opacity: 1 !important;
 }
@@ -129,6 +129,7 @@ video:-webkit-media-controls-panel {
         font-size: 60px;
     }
 }
+
 }
 
 #aboutTitle, #homeTitle, #homeBlurb {
@@ -155,6 +156,10 @@ video:-webkit-media-controls-panel {
   padding-left: 20%;
   padding-right: 20%;
   color: #00C2CB;
+}
+
+#aboutContainer {
+  margin: 50px;
 }
 
 .row1 { 
@@ -193,6 +198,11 @@ video:-webkit-media-controls-panel {
 
 .btn {
   background-color: #FF66C4;
+
+}
+
+.btn:hover {
+  background-color: #00C2CB;
 }
 
 #homeLogo {
@@ -218,11 +228,12 @@ footer {
 /* CONTACT PAGE */
 
 #contactHeader {
-  padding: 225px;
-  background-image: url(./images/date-night-2016.png);
-  background-size: cover;
-  position: relative;
-  padding-bottom: 25%;
+    padding: 225px;
+    background-image: url(./images/date-night-2016.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
 }
 
 p {
@@ -297,6 +308,10 @@ p {
     padding: 30px;
   }
 
+  #submit-button:hover {
+    background-color: #00C2CB;
+  }
+
   /* ABOUT PAGE */
 
   .keisha, .quyana, .tvedt, .ethan {
@@ -326,7 +341,8 @@ p {
   margin-right: 50px;
   }
 
-  #dropdownMenuButton1 {
+  #dropdownMenuButton1, #submit-button 
+  {
     margin: 0px;
     background-color: #FF66C4;
   }
