@@ -2,9 +2,9 @@
 // console.log(restArr);
 function main() {
   console.log("I'm here");
-  const form = document.getElementById('search-form');
-  const inputCity = document.getElementById('city');
-  const inputState = document.getElementById('state');
+  const form = document.getElementById("search-form");
+  const inputCity = document.getElementById("city");
+  const inputState = document.getElementById("state");
   form.addEventListener("submit", (e) => {
     // capture the event and prevent default
     e.preventDefault();
@@ -13,8 +13,6 @@ function main() {
     //capture the input variables value
     const inputCityName = inputCity.value.toLowerCase(); // toLowerCase() makes the data standard
     const inputStateName = inputState.value.toLowerCase();
-    // console.log(inputCityName);
-    // console.log(inputStateName);
 
     // reset the form
     form.reset();
@@ -36,12 +34,6 @@ async function getActivityPlaces(
 
   try {
     cityData = await getCityData(inputCityName, inputStateName);
-    // const response = await fetch(
-    //     `https://api.tomtom.com/search/2/categorySearch/${category}.json?lat=${lat}&lon=${lon}&view=Unified&relatedPois=off&limit=100&key=x5oSQEqlYnrwnGwEFZLA7HK78PZWE59q`}, {
-    //     method: 'GET',
-    //     headers: { 'X-Api-Key': '2nXylAnQUAU16yoH3D5uCg==aqpHvQp81aTPlcw5'},
-    //     contentType: 'application/json',
-    // });
   } catch (error) {
     console.log(error);
   }
@@ -91,43 +83,11 @@ async function getCityData(inputCityName, inputStateName) {
   } catch (error) {
     console.log(error);
   }
-};
-
-// function arrLogic(lat, lon) {
-//   let restArr = [];
-//   // let results = document.getElementById(restContainer);
-//   console.log("hello");
-//   console.log(counter);
-//   if () {
-//     console.log("if");
-//     restArr = [];
-//     console.log(`arrLogic: ${JSON.stringify(restArr)}`);
-//     getListofPlaces(lat, lon, restArr);
-//   } else {
-//     console.log("else");
-//     restArr = [];
-//     console.log(restArr);
-//     getListofPlaces(lat, lon, restArr);
-//   }
-//   console.log(counter);
-// }
+}
 
 function getListofPlaces(lat, lon) {
-  // let restArr = [];
-  // if (!restArr === []) {
-  //     restArr = [];
-  // }
-  // if (!restArr) {
-  //     let restArr = [];
-  // }
-  // else {
-  //     restArr = [];
-  //     console.log(restArr);
-  // restArr.delete();
   let restArr = [];
   restArr.length = 0;
-  // restArr.length = [];
-  // console.log(restArr);
   console.log("object");
   const restContainer = document.getElementById("restContainer");
   restContainer.style = "display: flexbox; flex-wrap: wrap;";
@@ -142,85 +102,65 @@ function getListofPlaces(lat, lon) {
     )
 
     .then((data) => {
-        console.log(`data res: ${JSON.stringify(data, null, 2)}`);
-      //   console.log(`restArr after res: ${JSON.stringify(restArr, null, 2)}`);
+      console.log(`data res: ${JSON.stringify(data, null, 2)}`);
       data.results.forEach((restaurant, index) => {
-        // console.log(restaurant);
-        // console.log(JSON.stringify(restaurant, null, 2));
         restArr.push(restaurant);
-        // console.log(restArr);
-          let idNum = `${restaurant.id}`
-        //   let idNumString = idNum.toString();
-          console.log(idNum);
-          let divId = idNum.concat("Div")
-          console.log(divId);
-          restContainer.innerHTML += `
+        let idNum = `${restaurant.id}`;
+        console.log(idNum);
+        let divId = idNum.concat("Div");
+        console.log(divId);
+        restContainer.innerHTML += `
             <div id="${divId}" class="card">
                 <p style="color:black">${restaurant.poi.name}</p>
                 <p style="color:black">${restaurant.address.freeformAddress}</p>
             </div>
             `;
-          let restDiv = document.getElementById(`${divId}`)
-        if(restaurant.poi.phone){
-              restDiv.innerHTML += `<p style="color:black">${restaurant.poi.phone}</p>`
-          };
-          restDiv.innerHTML +=`<button id="${idNum}" class="addButton btn btn-primary">Add to List</button>`
-        //     let button = document.getElementById(`${index}`);
-        //     button.addEventListener("click", callAddToList(`${restArr, index}`) )
-        // })
-        // function callAddToList(restArr, index) {
-        //     addToList(restArr, index);
-        // }
+        let restDiv = document.getElementById(`${divId}`);
+        if (restaurant.poi.phone) {
+          restDiv.innerHTML += `<p style="color:black">${restaurant.poi.phone}</p>`;
+        }
+        restDiv.innerHTML += `<button id="${idNum}" class="addButton btn btn-primary">Add to List</button>`;
       });
       document.addEventListener("click", (e) => {
         let idNum = e.target.id;
-        // console.log(typeof i);
-        // if (e.target.className === "addButton")
-      if(e.target.classList.contains("addButton"))
-        {
+
+        if (e.target.classList.contains("addButton")) {
           addToList(restArr, idNum);
         }
       });
     });
-};
+}
 // };
 
 function addToList(restArr, idNum) {
-  //   console.log(`rest: ${JSON.stringify(restArr[i], null, 2)}`);
-  //   console.log(`restArr: ${restArr.length}`);
-  //   console.log(`addToList restArr: ${JSON.stringify(restArr, null, 2)}`);
   if (!localStorage.restaurants) {
     console.log("if");
     localStorage.setItem("restaurants", "[]");
-    // let restaurants = localStorage.restaurants;
-      let tempRestaurants = JSON.parse(localStorage.restaurants);
-      console.log(JSON.stringify(restArr, null, 2));
-      console.log(`tempRestaurants: ${tempRestaurants.length}`);
-      let tempRest = restArr.filter(object => object.id === `${idNum}`)
-      tempRestaurants.push(tempRest[0]);
-      tempRest.length = 0;
-      console.log(tempRest);
-      let filteredTempRestaurants = tempRestaurants.filter((e) => {
-          return e !=null;
-      })
+    let tempRestaurants = JSON.parse(localStorage.restaurants);
+    console.log(JSON.stringify(restArr, null, 2));
+    console.log(`tempRestaurants: ${tempRestaurants.length}`);
+    let tempRest = restArr.filter((object) => object.id === `${idNum}`);
+    tempRestaurants.push(tempRest[0]);
+    tempRest.length = 0;
+    console.log(tempRest);
+    let filteredTempRestaurants = tempRestaurants.filter((e) => {
+      return e != null;
+    });
     localStorage.restaurants = JSON.stringify(filteredTempRestaurants);
-    // tempRestaurants = [];
     console.log(tempRestaurants);
   } else {
-      console.log("else");
-    // let restaurants = localStorage.restaurants;
-      let tempRestaurants = JSON.parse(localStorage.restaurants);
-      console.log(JSON.stringify(restArr, null, 2));
-      console.log(`tempRestaurants: ${tempRestaurants.length}`);
-      let tempRest = restArr.filter(object => object.id === `${idNum}`)
-      tempRestaurants.push(tempRest[0]);
-      tempRest.length = 0;
-      console.log(tempRest);
-      let filteredTempRestaurants = tempRestaurants.filter((e) => {
-          return e != null;
-      });
+    console.log("else");
+    let tempRestaurants = JSON.parse(localStorage.restaurants);
+    console.log(JSON.stringify(restArr, null, 2));
+    console.log(`tempRestaurants: ${tempRestaurants.length}`);
+    let tempRest = restArr.filter((object) => object.id === `${idNum}`);
+    tempRestaurants.push(tempRest[0]);
+    tempRest.length = 0;
+    console.log(tempRest);
+    let filteredTempRestaurants = tempRestaurants.filter((e) => {
+      return e != null;
+    });
     localStorage.restaurants = JSON.stringify(filteredTempRestaurants);
-    // tempRestaurants = [];
     console.log(tempRestaurants);
   }
-};
+}
