@@ -82,15 +82,9 @@ video:-webkit-media-controls-panel {
 
 /* HOME PAGE */
 
-#homecontainer {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0px;
-  bottom:0px;
-  text-align:center;
-
+#homeCenter {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .body {
