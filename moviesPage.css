@@ -23,9 +23,8 @@ header {
   text-align: center;
 }
 
-
 .movies-container {
-  display: flexbox;
+  display: flex;
   align-content: center;
   margin: 4px auto;
 }
@@ -113,4 +112,8 @@ footer {
   position: fixed;
   bottom: 0px;
   text-align: center;
+}
+
+#navbarnavDropdown{
+  justify-content: end;
 }
