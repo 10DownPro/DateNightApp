@@ -18,7 +18,7 @@
     background-attachment: fixed;
     background-position: center center; 
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 65vh;
   }
 
 /* MAIN PAGE */
@@ -72,7 +72,7 @@ video {
     height: auto;
     padding-top: 75px;
     padding-bottom: 65px;
-    
+
 }
 
 video:-webkit-media-controls-panel {
@@ -82,17 +82,59 @@ video:-webkit-media-controls-panel {
 
 /* HOME PAGE */
 
+#homecontainer {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  bottom:0px;
+  text-align:center;
+
+}
+
 .body {
     background-color: #27032c; 
 }
 
+#header {
+  background-image: ;
+}
+
 #headerTitle {
-  padding-top: 10%;
-  font-size: 200px;
+  font-size: 20vw;
+  color: white;
+  padding-top: 95px;
 }
 
 #blurb, #homeBlurb {
-  font-size: 50px;
+  font-size: 25px;
+}
+
+#blurb {
+  @media screen and (min-width: 601px) {
+    div.example {
+        font-size: 40px;
+    }
+    .a{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.example {
+        font-size: 30px;
+    }
+    .a{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 800px) {
+    div.example {
+        font-size: 60px;
+    }
+}
 }
 
 #aboutTitle, #homeTitle, #homeBlurb {
@@ -101,9 +143,7 @@ video:-webkit-media-controls-panel {
 
 #homeBlurb {
   margin-bottom: 5%;
-  font-size: 40px;
-  padding-left: 20%;
-  padding-right: 20%;
+  font-size: 25px;
   color: #00C2CB;
 }
 
@@ -113,7 +153,7 @@ video:-webkit-media-controls-panel {
 }
 
 #homeTitle {
-  font-size: 500%;
+  font-size: 300%;
 }
 #aboutBlurb {
   margin-bottom: 5%;
@@ -285,8 +325,8 @@ p {
   }
 
   #homeInner {
-  padding-right: 9%;
-  }
+    margin-bottom: 5%; 
+   }
 
   .dropdown-menu {
   margin-right: 50px;
